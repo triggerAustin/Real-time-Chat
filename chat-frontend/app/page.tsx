@@ -22,7 +22,6 @@ export default function Home() {
     try {
       setError('');
       const data = await authService.handleAuth(endpoint, user, pass);
-      authService.setSession(data.token, data.username);
       setUsername(data.username);
       setIsAuthenticated(true);
     } catch (err: any) {
