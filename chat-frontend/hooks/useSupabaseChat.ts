@@ -211,7 +211,6 @@ export function useSupabaseChat(activeRoom: string, currentUsername: string) {
     if (activeRoomRef.current === roomName) {
     setMessages([]);
     window.location.hash = '#general';
-     setActiveRoom('general'); 
     }
   };
   
